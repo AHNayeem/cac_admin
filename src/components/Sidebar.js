@@ -4,7 +4,7 @@ import { useCallback } from 'react';
 import { IoChevronForward } from "react-icons/io5";
 
 export const links = [
-    { name: 'Agent', path: 'agent', sub_routes: ['agent-list', 'agent-add', 'agent-setting','statement-preview'] },
+    { name: 'Agent', path: 'agent', sub_routes: ['agent-list', 'agent-add', 'agent-setting','statement-preview','bill-preview'] },
     { name: 'Operator', path: 'operator', sub_routes: ['operator-list', 'operator-add', 'operator-setting'] },
     { name: 'Driver', path: 'driver', sub_routes: ['driver-list','driver-add', 'driver-setting'] },
     { name: 'Passenger', path: 'passenger', sub_routes: ['passenger-list', 'passenger-setting'] },

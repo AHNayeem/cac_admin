@@ -1,9 +1,66 @@
+import { MdFileDownload } from 'react-icons/md';
 import styles from './StatementPreview.module.css'
+import { IoChevronDownOutline } from 'react-icons/io5';
 
 function StatementPreviw() {
     return (
         <div className={styles.page_container}>
             <div className={styles.content_top_section}>
+                <div className={styles.filter_section}>
+                    <div className={`${styles.filter_item} ${styles.statement_section}`}>
+                        <div className={styles.statement_select}>
+                            <div>
+                                Statement Preview
+                            </div>
+                            <div>
+                                Agent's Name [ID] : January 2021
+                            </div>
+                            <div>
+                                <IoChevronDownOutline />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.filter_item}>
+                        <button className={styles.filter_submit}>SUBMIT</button>
+                    </div>
+                    <div className={styles.filter_item}>
+                        <select className={styles.filter_select}>
+                            <option>Select Agent</option>
+                        </select>
+                    </div>
+                    <div className={styles.filter_item}>
+                        <select className={styles.filter_select}>
+                            <option>January 2021</option>
+                        </select>
+                    </div>
+                    <div className={styles.filter_item}>
+                        <div className={styles.double_download}>
+                            <MdFileDownload />
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.filter_section} style={{ paddingTop: '25px' }}>
+                    {/* <div className={styles.filter_item}>
+                        <div className={styles.filter_count_sec}>
+                            <span>0,000,000</span>
+                        </div>
+                        <span className={styles.overlap_label}>Total Commission</span>
+                    </div> */}
+                    <div className={styles.filter_double}>
+                        <div className={styles.filter_item}>
+                            <div className={styles.filter_count_sec}>
+                                <span>£ 0,000,000.<span className={styles.floating_point}>00</span></span>
+                            </div>
+                            <span className={styles.overlap_label}>Total Commission</span>
+                        </div>
+                        <div className={styles.filter_item}>
+                            <div className={styles.filter_count_sec} style={{ backgroundColor: '#000', color: '#fff', cursor: 'pointer' }}>
+                                <span>UPDATE</span>
+                            </div>
+                            <span className={styles.overlap_label}>Statement</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className={styles.table_section}>
                 <table className={styles.data_table}>

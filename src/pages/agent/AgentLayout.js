@@ -3,6 +3,7 @@ import AgentList from "./agentList/AgentList";
 import AgentAdd from "./agentAdd/AgentAdd";
 import AgentSetting from "./agentSetting/AgentSetting";
 import StatementPreviw from "./statement/StatementPreview";
+import BillPreview from "./bill/BillPreview";
 
 function AgentLayout() {
     const [searchParams] = useSearchParams()
@@ -15,7 +16,9 @@ function AgentLayout() {
                 <AgentAdd />
                 : page === 'agent-setting' ?
                     <AgentSetting />
-                    : <StatementPreviw />
+                    : page === 'bill-preview' ?
+                        <BillPreview />
+                        : <StatementPreviw />
 
     );
 }

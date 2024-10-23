@@ -1,0 +1,452 @@
+.page_container {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flow-root;
+    box-sizing: border-box;
+}
+
+.content_top_section {
+    display: block;
+}
+
+.data_table {
+    width: 100%;
+}
+
+.data_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data_table thead {
+    position: sticky;
+    top: -1px;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.4)
+}
+
+.data_table th,
+.data_table td {
+    border: 1px dashed #ddd;
+    padding: 3px 10px;
+    text-align: center;
+}
+
+.data_table th {
+    background-color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 4px solid #000;
+    line-height: 14px;
+}
+
+
+.data_table td {
+    font-size: 12px;
+}
+
+.data_table tbody tr:nth-child(odd) {
+    background-color: #e0ffff63;
+}
+
+.floating_point {
+    font-size: 10px;
+}
+
+
+.filter_section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+
+.filter_item {
+    position: relative;
+}
+
+.filter_double {
+    width: 200px;
+    height: 24px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter_count_sec {
+    width: 100px;
+    height: 24px;
+    padding: 0 5px;
+    font-size: 12px;
+    background-color: #00ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlap_label {
+    position: absolute;
+    top: -12px;
+    font-size: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.filter_select {
+    width: 140px;
+    height: 32px;
+    border: 1px solid #000;
+    font-size: 14px;
+}
+
+.filter_select:focus-visible {
+    outline: none;
+}
+
+.statement_section {
+    width: calc(100% - 503px);
+    margin: 0;
+}
+
+.statement_select {
+    height: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DDFFFF;
+    border: 1px solid #0000002b;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.filter_submit {
+    width: 140px;
+    height: 32px;
+    border: none;
+    font-size: 14px;
+    background-color: #DDFFFF;
+    cursor: pointer;
+}
+
+.double_download {
+    width: 50px;
+    height: 32px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.body_section {
+    width: 100%;
+    height: calc(100% - 81px);
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_left {
+    width: 60%;
+    height: 100%;
+    padding: 15px;
+}
+
+.section_right {
+    width: 40%;
+    height: 100%;
+}
+
+.table_type_one {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid black;
+    margin: 20px auto;
+}
+
+
+.table-container {
+    border: 2px solid black;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header_row {
+    color: #000;
+    font-weight: bold;
+    padding: 6px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.data_row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* border-bottom: 1px solid lightgrey; */
+    position: relative;
+}
+
+.data_row:nth-child(even) {
+    background-color: #ddffff61;
+}
+
+
+.data_cell {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid lightgrey;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data_cell input {
+    width: 100%;
+    text-align: center;
+    border: 1px solid lightgrey;
+    height: 24px;
+}
+
+.blue input {
+    color: blue;
+}
+
+.red input {
+    color: red;
+}
+
+.right-align {
+    text-align: right;
+}
+
+/* invoice section */
+
+
+.invoice_container {
+    width: 100%;
+    height: calc(100% - 82px);
+    /* border: 1px dashed #ddd; */
+    /* padding: 20px; */
+    overflow-y: auto;
+}
+
+.invoice_top {
+    border: 1px dashed #ddd;
+    border-bottom: none;
+    padding: 20px 0 10px 10px;
+}
+
+.invoice_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.operator_info {
+    font-size: 12px;
+    width: 60%;
+}
+
+.operator_info p {
+    margin: 0;
+    line-height: 15px;
+}
+
+.invoice_details {
+    text-align: right;
+    width: 40%;
+}
+
+.invoice_details p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.invoice_details h2 {
+    margin-top: 4px;
+    font-size: 18px;
+    height: 22px;
+    color: #000;
+    background-color: #4bfffe;
+    padding: 0 10px;
+    margin-bottom: 0px;
+}
+
+.float_point {
+    font-size: 10px;
+}
+
+.table_container {
+    width: 100%;
+    /* margin-top: 20px; */
+}
+
+.invoice_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invoice_table th,
+.invoice_table td {
+    border: 1px dashed #ddd;
+    padding: 4px 8px;
+    text-align: center;
+}
+
+.invoice_table th {
+    background-color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.invoice_table td {
+    font-size: 12px;
+}
+
+tbody.table_body tr:nth-child(odd) {
+    background-color: #e0ffff63;
+}
+
+.note {
+    margin-top: 20px;
+    font-size: 12px;
+    width: 100%;
+}
+
+.note p {
+    margin: 0;
+}
+
+.totals {
+    text-align: right;
+}
+
+/* .totals td {
+    font-weight: bold;
+} */
+
+tbody.total_table_body {
+    background-color: #e0ffff;
+}
+
+tbody.total_table_body tr {
+    border-bottom: 1px solid #444;
+}
+
+tbody.total_table_body tr:last-child {
+    border-bottom: none;
+}
+
+.pay_type {
+    display: flex;
+    border: 1px solid blue;
+    margin-top: 6px;
+    width: 70%;
+    float: right;
+}
+
+.pay_due {
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    width: 50%;
+}
+
+.pay_now {
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    width: 50%;
+}
+
+.bottom_table {
+    display: flex;
+    border-top: 1px solid #444;
+    border-bottom: 4px solid #000;
+}
+
+.bottom_table_left {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    border: 1px dashed #ddd;
+    border-right: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.bottom_table_right {
+    width: 40%;
+}
+
+/* Bill Status */
+
+.bill_status_container {
+    width: 100%;
+}
+
+.bill_status_title {
+    text-align: left;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.bill_status_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.bill_status_item {
+    width: 25%;
+}
+
+.bill_status_itemcheck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.bill_status_itemlabel {
+    display: flex;
+    width: 100%;
+}
+
+.bill_status_itemsublabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 17px;
+    font-size: 12px;
+    color: #fff;
+    box-sizing: border-box;
+}
