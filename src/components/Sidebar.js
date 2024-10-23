@@ -6,19 +6,19 @@ import { IoChevronForward } from "react-icons/io5";
 export const links = [
     { name: 'Agent', path: 'agent', sub_routes: ['agent-list', 'agent-add', 'agent-setting','statement-preview','bill-preview'] },
     { name: 'Operator', path: 'operator', sub_routes: ['operator-list', 'operator-add', 'operator-setting'] },
-    { name: 'Driver', path: 'driver', sub_routes: ['driver-list','driver-add', 'driver-setting'] },
+    { name: 'Driver', path: 'driver', sub_routes: ['driver-list', 'driver-add', 'driver-setting'] },
     { name: 'Passenger', path: 'passenger', sub_routes: ['passenger-list', 'passenger-setting'] },
     { name: 'Vehicle', path: 'vehicle', sub_routes: ['vehicle-list', 'vehicle-add'] },
     { name: 'Trip History', path: 'trip-history', sub_routes: [] },
     { name: 'Payment', path: 'payment', sub_routes: [] },
     { name: 'Referral', path: 'referral', sub_routes: [] },
-    { name: 'Update Request', path: 'update-request', sub_routes: ['request-by-passenger','request-by-driver','request-by-agent','request-by-operator'] },
-    { name: 'service Type', path: 'service-type', sub_routes: [] },
+    { name: 'Update Request', path: 'update-request', sub_routes: ['request-by-passenger', 'request-by-driver', 'request-by-agent', 'request-by-operator'] },
+    { name: 'service Type', path: 'service-type', sub_routes: ['service-list', 'service-add'] },
     { name: 'Dispatcher', path: 'dispatcher', sub_routes: [] },
-    { name: 'Mass Message', path: 'mass-messsge', sub_routes: [] },
-    { name: 'Issue & Report', path: 'issue-report', sub_routes: [] },
-    { name: 'Sub-Admin', path: 'sub-admin', sub_routes: ['sub-admin-list','sub-admin-add'] },
-    { name: 'Setting', path: 'setting', sub_routes: ['app-passenger','app-driver'] },
+    { name: 'Mass Message', path: 'mass-message', sub_routes: ['message-list','message-add'] },
+    { name: 'Issue & Report', path: 'issue-report', sub_routes: ['issue-list','issue-add'] },
+    { name: 'Sub-Admin', path: 'sub-admin', sub_routes: ['sub-admin-list', 'sub-admin-add'] },
+    { name: 'Setting', path: 'setting', sub_routes: ['app-passenger', 'app-driver'] },
 ];
 
 function Sidebar({ collapse, setCollapse }) {

@@ -14,6 +14,9 @@ import SubAdminLayout from './pages/sub-admin/SubAdminLayout';
 import SettingLayout from './pages/setting/SettingLayout';
 import TripLayout from './pages/trip/TripLayout';
 import RequestLayout from './pages/update-request/RequestLayout';
+import MassMessageLayout from './pages/mass-message/MassMessageLayout';
+import IssueReportLayout from './pages/issue-report/IssueReportLayout';
+import ServiceTypeLayout from './pages/service-type/ServiceTypeLayout';
 
 // Lazy load pages
 const Dashboard = lazy(() => import('./pages/dashboard/Dashboard'));
@@ -37,6 +40,9 @@ function AppRoutes() {
             <Route path="/setting" element={<SettingLayout />} />
             <Route path="/trip-history" element={<TripLayout />} />
             <Route path="/update-request" element={<RequestLayout />} />
+            <Route path="/mass-message" element={<MassMessageLayout />} />
+            <Route path="/issue-report" element={<IssueReportLayout />} />
+            <Route path="/service-type" element={<ServiceTypeLayout />} />
           </Route>
           {/* </Route> */}
 
