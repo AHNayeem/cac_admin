@@ -14,7 +14,7 @@ export const links = [
     { name: 'Referral', path: 'referral', sub_routes: [] },
     { name: 'Update Request', path: 'update-request', sub_routes: ['request-by-passenger', 'request-by-driver', 'request-by-agent', 'request-by-operator'] },
     { name: 'service Type', path: 'service-type', sub_routes: ['service-list', 'service-add'] },
-    { name: 'Dispatcher', path: 'dispatcher', sub_routes: [] },
+    { name: 'Dispatcher', path: 'dispatcher', sub_routes: ['dispatcher-list','dispatcher-add'] },
     { name: 'Mass Message', path: 'mass-message', sub_routes: ['message-list','message-add'] },
     { name: 'Issue & Report', path: 'issue-report', sub_routes: ['issue-list','issue-add'] },
     { name: 'Sub-Admin', path: 'sub-admin', sub_routes: ['sub-admin-list', 'sub-admin-add'] },

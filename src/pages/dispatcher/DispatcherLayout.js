@@ -9,7 +9,7 @@ export default function DispatcherLayout() {
   const page = searchParams.get('page');
 
   return (
-      page === 'message-list' ?
+      page === 'dispatcher-list' ?
           <DispatcherList />
           // : page === 'agent-add' ?
           //     <AgentAdd />

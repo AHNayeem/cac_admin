@@ -50,10 +50,10 @@ function DispatcherList() {
                 <table className={styles.data_table}>
                     <thead>
                         <tr>
-                            <th> Category</th>
-                            <th>Description</th>
-                            <th>Urgency</th>
-                            <th>Date Submitted </th>
+                            <th>Driver</th>
+                            <th>Passenger</th>
+                            <th>Destination</th>
+                            <th>Status </th>
                             <th>Actions</th>
                         </tr>
                     </thead>
