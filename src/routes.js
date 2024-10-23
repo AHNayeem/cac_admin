@@ -17,6 +17,9 @@ import RequestLayout from './pages/update-request/RequestLayout';
 import MassMessageLayout from './pages/mass-message/MassMessageLayout';
 import IssueReportLayout from './pages/issue-report/IssueReportLayout';
 import ServiceTypeLayout from './pages/service-type/ServiceTypeLayout';
+import ReferralLayout from './pages/referral/ReferralLayout';
+import DispatcherLayout from './pages/dispatcher/DispatcherLayout';
+import PaymentLayout from './pages/payment/PaymentLayout';
 
 // Lazy load pages
 const Dashboard = lazy(() => import('./pages/dashboard/Dashboard'));
@@ -43,6 +46,9 @@ function AppRoutes() {
             <Route path="/mass-message" element={<MassMessageLayout />} />
             <Route path="/issue-report" element={<IssueReportLayout />} />
             <Route path="/service-type" element={<ServiceTypeLayout />} />
+            <Route path="/dispatcher" element={<DispatcherLayout />} />
+            <Route path="/payment" element={<PaymentLayout />} />
+            <Route path="/referral" element={<ReferralLayout />} />
           </Route>
           {/* </Route> */}
 

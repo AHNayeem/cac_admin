@@ -1,7 +1,7 @@
-import styles from './MessageList.module.css'
+import styles from './IssueReportList.module.css'
 import { MdFileDownload } from "react-icons/md";
 
-function MessageList() {
+function IssueReportList() {
     return (
         <div className={styles.page_container}>
             <div className={styles.content_top_section}>
@@ -50,10 +50,10 @@ function MessageList() {
                 <table className={styles.data_table}>
                     <thead>
                         <tr>
-                            <th> Recipients</th>
-                            <th>Message</th>
-                            <th>Scheduled/Time Sent</th>
-                            <th>Date Sent </th>
+                            <th> Category</th>
+                            <th>Description</th>
+                            <th>Urgency</th>
+                            <th>Date Submitted </th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -80,4 +80,4 @@ function MessageList() {
     );
 }
 
-export default MessageList;
+export default IssueReportList;

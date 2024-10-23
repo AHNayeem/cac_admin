@@ -2,6 +2,7 @@ import React from 'react'
 import MassMessage from './MassMessage'
 import { useSearchParams } from 'react-router-dom';
 import MessageList from './messageList/MessageList';
+import MessageAdd from './messageAdd/MessageAdd';
 
 export default function MassMessageLayout() {
     const [searchParams] = useSearchParams()
@@ -14,7 +15,7 @@ export default function MassMessageLayout() {
             //     <AgentAdd />
             //     : page === 'agent-setting' ?
             //         <AgentSetting />
-                    : <MassMessage />
+                    : <MessageAdd />
 
     );
 }
