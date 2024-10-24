@@ -1,0 +1,159 @@
+.page_container {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flow-root;
+    box-sizing: border-box;
+}
+
+.custom_container {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    background-color: #f5f5f552;
+    border: 1px solid #cccccc61;
+    cursor: pointer;
+}
+
+.active .header {
+    border: 1px solid #00FFFF;
+    background-color: #00FFFF;
+    /* color: #fff; */
+}
+
+.header_info {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_info span {
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.dropdown_icon {
+    font-size: 18px;
+}
+
+.content {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.active .content {
+    border: 1px solid #00FFFF;
+}
+
+.data_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 45%;
+}
+
+.column h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.data_row {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 5px 0; */
+}
+
+
+.data_row input {
+    width: 100%;
+    height: 24px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 1;
+    background-color: #DDFFFF;
+}
+
+.data_row input:focus-visible {
+    outline: none;
+}
+
+.image_section {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.image_box {
+    width: 100px;
+    height: 100px;
+    border: 1px dashed #00BFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+    color: #ccc;
+}
+
+.action_buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+
+.decline_btn {
+    background-color: #000;
+    color: #fff;
+    height: 24px;
+    padding: 0 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.accept_btn {
+    background-color: #00FFFF;
+    color: #000;
+    height: 24px;
+    padding: 0 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.data_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data_table th,
+.data_table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.data_table th {
+    background-color: #fff;
+    font-size: 12px;
+}
+
+.data_table td {
+    font-size: 12px;
+}
