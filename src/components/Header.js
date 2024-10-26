@@ -21,7 +21,7 @@ function Header() {
     return (
         <header className={styles.main_header}>
             <div className={styles.head_left}>
-                <div className={styles.home_btn}>Home</div>
+                <Link to={'/'} className={`${styles.home_btn} ${location.pathname === '/' && styles.active}`}>Home</Link>
             </div>
             <div className={styles.head_mid}>
                 {links.filter(f => location.pathname.indexOf(f.path) > -1)?.map((v, i) =>
