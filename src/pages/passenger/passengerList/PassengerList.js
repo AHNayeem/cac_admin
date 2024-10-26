@@ -108,7 +108,7 @@ function PassengerList() {
                     <tbody>
                         <tr>
                             <td>XXX XXXXXX</td>
-                            <td>+44XXXXXXXXX </td>
+                            <td> <div className={styles.name_td}> <span className={styles.name_td_label}> +44XXXXXXXXX </span> <span className={styles.name_td_ball}></span> </div> </td>
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
@@ -120,7 +120,7 @@ function PassengerList() {
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
-                            <td>+44XXXXXXXXX </td>
+                            <td> <div className={`${styles.name_td} ${styles.red}`}> <span className={styles.name_td_label}> +44XXXXXXXXX </span> <span className={styles.name_td_ball}></span> </div> </td>
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
@@ -132,7 +132,7 @@ function PassengerList() {
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
-                            <td>+44XXXXXXXXX </td>
+                            <td> <div className={`${styles.name_td} ${styles.green}`}> <span className={styles.name_td_label}> +44XXXXXXXXX </span> <span className={styles.name_td_ball}></span> </div> </td>
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
@@ -144,7 +144,7 @@ function PassengerList() {
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
-                            <td>+44XXXXXXXXX </td>
+                            <td> <div className={`${styles.name_td} ${styles.black}`}> <span className={styles.name_td_label}> +44XXXXXXXXX </span> <span className={styles.name_td_ball}></span> </div> </td>
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>

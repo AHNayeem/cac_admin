@@ -73,11 +73,13 @@
     font-weight: 400;
     border-bottom: 4px solid #000;
     line-height: 14px;
+    text-align: left;
 }
 
 
 .data_table td {
     font-size: 12px;
+    text-align: left;
 }
 
 .data_table tbody tr:nth-child(odd) {
@@ -171,4 +173,42 @@
     justify-content: center;
     font-size: 20px;
     cursor: pointer;
+}
+
+.name_td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name_td_label {
+    color: #000;
+}
+
+.name_td_ball {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.red .name_td_label {
+    color: #ff0000;
+}
+
+.red .name_td_ball {
+    background-color: #ff0000;
+}
+.green .name_td_label {
+    color: green;
+}
+
+.green .name_td_ball {
+    background-color: green;
+}
+.black .name_td_label {
+    color: #000;
+}
+
+.black .name_td_ball {
+    background-color: #000;
 }
