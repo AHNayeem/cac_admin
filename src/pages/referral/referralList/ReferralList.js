@@ -66,7 +66,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -74,7 +78,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -82,7 +90,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -90,7 +102,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -98,7 +114,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -106,7 +126,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -114,7 +138,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -122,7 +150,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -130,7 +162,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -138,7 +174,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -146,7 +186,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -154,7 +198,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -162,7 +210,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -170,7 +222,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -178,7 +234,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -186,7 +246,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -194,7 +258,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -202,7 +270,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -210,7 +282,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -218,7 +294,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -226,7 +306,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -234,7 +318,11 @@ export default function ReferralList() {
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
 
                     </tbody>

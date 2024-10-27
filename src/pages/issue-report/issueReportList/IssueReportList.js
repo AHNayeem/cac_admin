@@ -63,14 +63,22 @@ function IssueReportList() {
                             <td>Affordable rides </td>
                             <td>$3</td>
                             <td>Sedan</td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Premium</td>
                             <td>Luxury experience </td>
                             <td>$5</td>
                             <td>Luxury Sedan</td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
 
                     </tbody>

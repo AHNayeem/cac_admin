@@ -52,7 +52,11 @@ function VehicleList() {
                             <td>+44XXXXXXXXX </td>
                             <td>xxxx@xxxx.xxx</td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
 
                     </tbody>

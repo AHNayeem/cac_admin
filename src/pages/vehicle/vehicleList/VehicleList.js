@@ -67,7 +67,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -76,7 +80,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -85,7 +93,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -94,7 +106,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -103,7 +119,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -112,7 +132,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -121,7 +145,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -130,7 +158,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -139,7 +171,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -148,7 +184,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -157,7 +197,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -166,7 +210,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -175,7 +223,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -184,7 +236,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -193,7 +249,11 @@ function VehicleList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                        
 

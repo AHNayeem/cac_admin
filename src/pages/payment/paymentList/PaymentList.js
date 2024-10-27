@@ -64,168 +64,264 @@ export default function PaymentList() {
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
                             <td> XXXXXXX XXXXXXXXX </td>
-                            <td> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.action_label}>Action</span>
+                                </div>
+                            </td>
                         </tr>
                         
                     </tbody>
