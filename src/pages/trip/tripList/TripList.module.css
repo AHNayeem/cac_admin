@@ -66,6 +66,7 @@
 .filter_select:focus-visible {
     outline: none;
 }
+
 .filter_week_select {
     width: 230px;
     height: 24px;
@@ -140,7 +141,7 @@
 .data_table td {
     border: 1px dashed #ddd;
     padding: 3px 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .data_table th {
@@ -302,4 +303,8 @@
     padding: 0 8px;
     display: flex;
     align-items: center;
+}
+
+.floating_point {
+    font-size: 10px;
 }

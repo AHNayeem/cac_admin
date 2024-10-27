@@ -103,37 +103,37 @@ function BillPreview() {
                                         <td style={{ textAlign: 'left' }}>Description will start from here</td>
                                         <td>0,000</td>
                                         <td>0,000</td>
-                                        <td>00,000.00</td>
+                                        <td>00,000.<span className={styles.floating_point}>00</span></td>
                                     </tr>
                                     <tr>
                                         <td style={{ textAlign: 'left' }}>Description will start from here</td>
                                         <td>0,000</td>
                                         <td>0,000</td>
-                                        <td>00,000.00</td>
+                                        <td>00,000.<span className={styles.floating_point}>00</span></td>
                                     </tr>
                                     <tr>
                                         <td style={{ textAlign: 'left' }}>Description will start from here</td>
                                         <td>0,000</td>
                                         <td>0,000</td>
-                                        <td>00,000.00</td>
+                                        <td>00,000.<span className={styles.floating_point}>00</span></td>
                                     </tr>
                                     <tr>
                                         <td style={{ textAlign: 'left' }}>Description will start from here</td>
                                         <td>0,000</td>
                                         <td>0,000</td>
-                                        <td>00,000.00</td>
+                                        <td>00,000.<span className={styles.floating_point}>00</span></td>
                                     </tr>
                                     <tr>
                                         <td style={{ textAlign: 'left' }}>Description will start from here</td>
                                         <td>0,000</td>
                                         <td>0,000</td>
-                                        <td>00,000.00</td>
+                                        <td>00,000.<span className={styles.floating_point}>00</span></td>
                                     </tr>
                                     <tr>
                                         <td style={{ textAlign: 'left' }}>Description will start from here</td>
                                         <td>0,000</td>
                                         <td>0,000</td>
-                                        <td>00,000.00</td>
+                                        <td>00,000.<span className={styles.floating_point}>00</span></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -149,15 +149,15 @@ function BillPreview() {
                                     <tbody className={styles.total_table_body} >
                                         <tr>
                                             <td style={{ width: '60%', textAlign: 'right' }}>SUB-TOTAL:</td>
-                                            <td style={{ width: '40%' }}>00,000.00</td>
+                                            <td style={{ width: '40%' }}>00,000.<span className={styles.floating_point}>00</span></td>
                                         </tr>
                                         <tr>
                                             <td style={{ width: '60%', textAlign: 'right' }}>VAT:</td>
-                                            <td style={{ width: '40%' }}>00,000.00</td>
+                                            <td style={{ width: '40%' }}>00,000.<span className={styles.floating_point}>00</span></td>
                                         </tr>
                                         <tr>
                                             <td style={{ width: '60%', textAlign: 'right' }}>GROSS TOTAL:</td>
-                                            <td style={{ width: '40%' }}>00,000.00</td>
+                                            <td style={{ width: '40%' }}>00,000.<span className={styles.floating_point}>00</span></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -238,8 +238,8 @@ function BillPreview() {
                             </div>
                             <div className={styles.data_row}>
                                 <div className={`${styles.data_cell} ${styles.blue}`}><input type='text' value={'0,000'} /></div>
-                                <div className={`${styles.data_cell} ${styles.blue}`}><input type='text' value={'0,000,000.00'} /></div>
-                                <div className={`${styles.data_cell} ${styles.blue}`}><input type='text' value={'0,000.00'} /></div>
+                                <div className={`${styles.data_cell} ${styles.blue}`}><input type='text' value={'0,000,000.<span className={styles.floating_point}>00</span>'} /></div>
+                                <div className={`${styles.data_cell} ${styles.blue}`}><input type='text' value={'0,000.<span className={styles.floating_point}>00</span>'} /></div>
                                 <div className={`${styles.data_cell} ${styles.blue}`}><input type='text' value={'00/00/0000'} /></div>
                             </div>
 
@@ -251,10 +251,10 @@ function BillPreview() {
                                 <div className={styles.data_cell}>Others</div>
                             </div>
                             <div className={styles.data_row}>
-                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.00'} /></div>
-                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.00'} /></div>
-                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.00'} /></div>
-                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.00'} /></div>
+                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.<span className={styles.floating_point}>00</span>'} /></div>
+                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.<span className={styles.floating_point}>00</span>'} /></div>
+                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.<span className={styles.floating_point}>00</span>'} /></div>
+                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.<span className={styles.floating_point}>00</span>'} /></div>
                             </div>
 
                         </div>

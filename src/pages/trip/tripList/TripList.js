@@ -117,7 +117,7 @@ function TripList() {
                             <td>First Name Last Name <br /> [+447777777] </td>
                             <td>XXXXXX XXX XXXXX  </td>
                             <td>First Name Last Name <br /> [+447777777] </td>
-                            <td>$26.00</td>
+                            <td style={{color:'blue'}}>$26.<span className={styles.floating_point}>00</span></td>
                             <td> Completed </td>
                         </tr>
                         <tr>
@@ -170,7 +170,7 @@ function TripList() {
                                             </div>
                                             <div className={styles.tips_container}>
                                                 <div className={styles.tips_label}>Tips: </div>
-                                                <div className={styles.tips_value}>$ 00.00</div>
+                                                <div className={styles.tips_value}>$ 00.<span className={styles.floating_point}>00</span></div>
                                             </div>
                                         </div>
                                     </div>
@@ -182,7 +182,7 @@ function TripList() {
                             <td>First Name Last Name <br /> [+447777777] </td>
                             <td>XXXXXX XXX XXXXX  </td>
                             <td>First Name Last Name <br /> [+447777777] </td>
-                            <td>$26.00</td>
+                            <td style={{color:'blue'}}>$26.<span className={styles.floating_point}>00</span></td>
                             <td> Completed </td>
                         </tr>
                         <tr>
@@ -190,7 +190,7 @@ function TripList() {
                             <td>First Name Last Name <br /> [+447777777] </td>
                             <td>XXXXXX XXX XXXXX  </td>
                             <td>First Name Last Name <br /> [+447777777] </td>
-                            <td>$26.00</td>
+                            <td style={{color:'blue'}}>$26.<span className={styles.floating_point}>00</span></td>
                             <td> Completed </td>
                         </tr>
                         <tr>
@@ -198,7 +198,7 @@ function TripList() {
                             <td>First Name Last Name <br /> [+447777777] </td>
                             <td>XXXXXX XXX XXXXX  </td>
                             <td>First Name Last Name <br /> [+447777777] </td>
-                            <td>$26.00</td>
+                            <td style={{color:'blue'}}>$26.<span className={styles.floating_point}>00</span></td>
                             <td> Completed </td>
                         </tr>
                         <tr>
@@ -206,7 +206,7 @@ function TripList() {
                             <td>First Name Last Name <br /> [+447777777] </td>
                             <td>XXXXXX XXX XXXXX  </td>
                             <td>First Name Last Name <br /> [+447777777] </td>
-                            <td>$26.00</td>
+                            <td style={{color:'blue'}}>$26.<span className={styles.floating_point}>00</span></td>
                             <td> Completed </td>
                         </tr>
                         <tr>
@@ -214,7 +214,7 @@ function TripList() {
                             <td>First Name Last Name <br /> [+447777777] </td>
                             <td>XXXXXX XXX XXXXX  </td>
                             <td>First Name Last Name <br /> [+447777777] </td>
-                            <td>$26.00</td>
+                            <td style={{color:'blue'}}>$26.<span className={styles.floating_point}>00</span></td>
                             <td> Completed </td>
                         </tr>
                     </tbody>
