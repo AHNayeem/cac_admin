@@ -63,7 +63,7 @@
 .data_table td {
     border: 1px dashed #ddd;
     padding: 3px 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .data_table th {
