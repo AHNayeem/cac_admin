@@ -238,8 +238,8 @@ function BillPreview() {
                             </div>
                             <div className={styles.data_row}>
                                 <div className={`${styles.data_cell} ${styles.blue}`}><input type='text' value={'0,000'} /></div>
-                                <div className={`${styles.data_cell} ${styles.blue}`}><input type='text' value={'0,000,000.<span className={styles.floating_point}>00</span>'} /></div>
-                                <div className={`${styles.data_cell} ${styles.blue}`}><input type='text' value={'0,000.<span className={styles.floating_point}>00</span>'} /></div>
+                                <div className={`${styles.data_cell} ${styles.blue}`}><input type='text' value={'0,000,000.00'} /></div>
+                                <div className={`${styles.data_cell} ${styles.blue}`}><input type='text' value={'0,000.00'} /></div>
                                 <div className={`${styles.data_cell} ${styles.blue}`}><input type='text' value={'00/00/0000'} /></div>
                             </div>
 
@@ -251,10 +251,10 @@ function BillPreview() {
                                 <div className={styles.data_cell}>Others</div>
                             </div>
                             <div className={styles.data_row}>
-                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.<span className={styles.floating_point}>00</span>'} /></div>
-                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.<span className={styles.floating_point}>00</span>'} /></div>
-                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.<span className={styles.floating_point}>00</span>'} /></div>
-                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.<span className={styles.floating_point}>00</span>'} /></div>
+                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.00'} /></div>
+                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.00'} /></div>
+                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.00'} /></div>
+                                <div className={`${styles.data_cell} ${styles.red}`}><input type='text' value={'0,000.00'} /></div>
                             </div>
 
                         </div>
