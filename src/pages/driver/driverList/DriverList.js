@@ -7,9 +7,6 @@ function DriverList() {
             <div className={styles.content_top_section}>
                 <div className={styles.filter_section} style={{ marginBottom: '10px' }}>
                     <div className={styles.filter_item}>
-                        <input type='text' className={styles.filter_input} placeholder='Search by name...' />
-                    </div>
-                    <div className={styles.filter_item}>
                         <input type='text' className={styles.filter_input} placeholder='Search by email...' />
                     </div>
                     <div className={styles.filter_item}>
@@ -56,6 +53,9 @@ function DriverList() {
                     </div>
                 </div>
                 <div className={styles.filter_section}>
+                    <div className={styles.filter_item}>
+                        <input type='text' className={styles.filter_input} placeholder='Search by name...' />
+                    </div>
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>All Operator</option>

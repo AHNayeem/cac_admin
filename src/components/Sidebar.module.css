@@ -43,9 +43,22 @@
 }
 
 .collapse_bottoom {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    display: flow-root;
+}
+
+.sidebar_bottom {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.sidebar_bottom::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, and Opera */
 }
 
 .left_link {
@@ -56,7 +69,7 @@
     justify-content: flex-end;
     color: #333;
     background-color: #fff;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
     padding: 5px 15px;
     border-bottom: 2px;
     border: 1px solid rgb(0 0 0 / 40%);
