@@ -9,7 +9,7 @@ export const links = [
     { name: 'Driver', path: 'driver', sub_routes: ['driver-list', 'driver-add', 'driver-setting'] },
     { name: 'Passenger', path: 'passenger', sub_routes: ['passenger-list', 'passenger-setting'] },
     { name: 'Vehicle', path: 'vehicle', sub_routes: ['vehicle-list', 'vehicle-add'] },
-    { name: 'Trip History', path: 'trip-history', sub_routes: [] },
+    { name: 'Trip History', path: 'trip-history', sub_routes: ['trip-list'] },
     { name: 'Payment', path: 'payment', sub_routes: ['payment-list','payment-add'] },
     { name: 'Referral', path: 'referral', sub_routes: ['referral-list','referral-add'] },
     { name: 'Update Request', path: 'update-request', sub_routes: ['request-by-passenger', 'request-by-driver', 'request-by-agent', 'request-by-operator'] },
