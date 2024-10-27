@@ -1,7 +1,38 @@
+import { useRef, useState } from 'react';
 import styles from './AgentList.module.css'
 import { MdFileDownload } from "react-icons/md";
 
 function AgentList() {
+    const [actionMenuPosition, setActionMenuPosition] = useState({ top: 0, right: 0 });
+    const [showActionMenu, setShowActionMenu] = useState(false);
+    const actionMenuRef = useRef(null);
+    const scrollContainerRef = useRef(null);
+
+    const handleActionClick = (event) => {
+        const itemRect = event.target.getBoundingClientRect();
+        const containerRect = scrollContainerRef.current.getBoundingClientRect();
+        const popupHeight = actionMenuRef.current?.offsetHeight || 0;
+
+        // Calculate available space in the container
+        const spaceBelow = containerRect.bottom - itemRect.bottom;
+        const spaceAbove = itemRect.top - containerRect.top;
+
+        // Determine position based on space in the scroll container
+        const topPosition = spaceBelow < popupHeight && spaceAbove > popupHeight
+            ? itemRect.top - popupHeight // Position above if space below is limited
+            : itemRect.bottom;           // Otherwise, position below
+
+        // Calculate right position to be next to the button
+        const rightPosition = window.innerWidth - itemRect.right; // Right edge of the viewport
+
+        setActionMenuPosition({ top: topPosition, right: rightPosition });
+        setShowActionMenu(true);
+    };
+
+    const handleCloseMenu = () => {
+        setShowActionMenu(false);
+    };
+
     return (
         <div className={styles.page_container}>
             <div className={styles.content_top_section}>
@@ -62,7 +93,7 @@ function AgentList() {
                             <th>Date <br /> Action</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody ref={scrollContainerRef}>
                         <tr>
                             <td>XXX XXXXXX</td>
                             <td>+44XXXXXXXXX </td>
@@ -73,7 +104,22 @@ function AgentList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label} onClick={handleActionClick}>Action</span>
+                                    <div className={styles.action_popup} ref={actionMenuRef} >
+                                        {/* style={{ top: `${actionMenuPosition.top}px`, right: `${actionMenuPosition.right}px` }} */}
+                                        <div className={styles.action_item}>Edit Details</div>
+                                        <div className={styles.action_item}>Profile : View</div>
+                                        <div className={styles.action_item}>Operator : View</div>
+                                        <div className={styles.action_item}>Referral : View</div>
+                                        <div className={styles.action_item}>Commission : View</div>
+                                        <div className={styles.action_item}>URLs Setting</div>
+                                        <div className={styles.action_item}>Generate Commission</div>
+                                        <div className={styles.action_item}>Accept / Decline</div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -85,7 +131,21 @@ function AgentList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label} onClick={handleActionClick}>Action</span>
+                                    {/* <div className={styles.action_popup}>
+                                        <div className={styles.action_item}>Edit Details</div>
+                                        <div className={styles.action_item}>Profile : View</div>
+                                        <div className={styles.action_item}>Operator : View</div>
+                                        <div className={styles.action_item}>Referral : View</div>
+                                        <div className={styles.action_item}>Commission : View</div>
+                                        <div className={styles.action_item}>URLs Setting</div>
+                                        <div className={styles.action_item}>Generate Commission</div>
+                                        <div className={styles.action_item}>Accept / Decline</div>
+                                    </div> */}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -97,7 +157,21 @@ function AgentList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label} onClick={handleActionClick}>Action</span>
+                                    {/* <div className={styles.action_popup}>
+                                        <div className={styles.action_item}>Edit Details</div>
+                                        <div className={styles.action_item}>Profile : View</div>
+                                        <div className={styles.action_item}>Operator : View</div>
+                                        <div className={styles.action_item}>Referral : View</div>
+                                        <div className={styles.action_item}>Commission : View</div>
+                                        <div className={styles.action_item}>URLs Setting</div>
+                                        <div className={styles.action_item}>Generate Commission</div>
+                                        <div className={styles.action_item}>Accept / Decline</div>
+                                    </div> */}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -109,7 +183,21 @@ function AgentList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label} onClick={handleActionClick}>Action</span>
+                                    {/* <div className={styles.action_popup}>
+                                        <div className={styles.action_item}>Edit Details</div>
+                                        <div className={styles.action_item}>Profile : View</div>
+                                        <div className={styles.action_item}>Operator : View</div>
+                                        <div className={styles.action_item}>Referral : View</div>
+                                        <div className={styles.action_item}>Commission : View</div>
+                                        <div className={styles.action_item}>URLs Setting</div>
+                                        <div className={styles.action_item}>Generate Commission</div>
+                                        <div className={styles.action_item}>Accept / Decline</div>
+                                    </div> */}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -121,7 +209,21 @@ function AgentList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label} onClick={handleActionClick}>Action</span>
+                                    {/* <div className={styles.action_popup}>
+                                        <div className={styles.action_item}>Edit Details</div>
+                                        <div className={styles.action_item}>Profile : View</div>
+                                        <div className={styles.action_item}>Operator : View</div>
+                                        <div className={styles.action_item}>Referral : View</div>
+                                        <div className={styles.action_item}>Commission : View</div>
+                                        <div className={styles.action_item}>URLs Setting</div>
+                                        <div className={styles.action_item}>Generate Commission</div>
+                                        <div className={styles.action_item}>Accept / Decline</div>
+                                    </div> */}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -133,7 +235,21 @@ function AgentList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label} onClick={handleActionClick}>Action</span>
+                                    {/* <div className={styles.action_popup}>
+                                        <div className={styles.action_item}>Edit Details</div>
+                                        <div className={styles.action_item}>Profile : View</div>
+                                        <div className={styles.action_item}>Operator : View</div>
+                                        <div className={styles.action_item}>Referral : View</div>
+                                        <div className={styles.action_item}>Commission : View</div>
+                                        <div className={styles.action_item}>URLs Setting</div>
+                                        <div className={styles.action_item}>Generate Commission</div>
+                                        <div className={styles.action_item}>Accept / Decline</div>
+                                    </div> */}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -145,7 +261,21 @@ function AgentList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label} onClick={handleActionClick}>Action</span>
+                                    {/* <div className={styles.action_popup}>
+                                        <div className={styles.action_item}>Edit Details</div>
+                                        <div className={styles.action_item}>Profile : View</div>
+                                        <div className={styles.action_item}>Operator : View</div>
+                                        <div className={styles.action_item}>Referral : View</div>
+                                        <div className={styles.action_item}>Commission : View</div>
+                                        <div className={styles.action_item}>URLs Setting</div>
+                                        <div className={styles.action_item}>Generate Commission</div>
+                                        <div className={styles.action_item}>Accept / Decline</div>
+                                    </div> */}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -157,7 +287,21 @@ function AgentList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label} onClick={handleActionClick}>Action</span>
+                                    {/* <div className={styles.action_popup}>
+                                        <div className={styles.action_item}>Edit Details</div>
+                                        <div className={styles.action_item}>Profile : View</div>
+                                        <div className={styles.action_item}>Operator : View</div>
+                                        <div className={styles.action_item}>Referral : View</div>
+                                        <div className={styles.action_item}>Commission : View</div>
+                                        <div className={styles.action_item}>URLs Setting</div>
+                                        <div className={styles.action_item}>Generate Commission</div>
+                                        <div className={styles.action_item}>Accept / Decline</div>
+                                    </div> */}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -169,7 +313,21 @@ function AgentList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label} onClick={handleActionClick}>Action</span>
+                                    {/* <div className={styles.action_popup}>
+                                        <div className={styles.action_item}>Edit Details</div>
+                                        <div className={styles.action_item}>Profile : View</div>
+                                        <div className={styles.action_item}>Operator : View</div>
+                                        <div className={styles.action_item}>Referral : View</div>
+                                        <div className={styles.action_item}>Commission : View</div>
+                                        <div className={styles.action_item}>URLs Setting</div>
+                                        <div className={styles.action_item}>Generate Commission</div>
+                                        <div className={styles.action_item}>Accept / Decline</div>
+                                    </div> */}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -181,7 +339,21 @@ function AgentList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label} onClick={handleActionClick}>Action</span>
+                                    {/* <div className={styles.action_popup}>
+                                        <div className={styles.action_item}>Edit Details</div>
+                                        <div className={styles.action_item}>Profile : View</div>
+                                        <div className={styles.action_item}>Operator : View</div>
+                                        <div className={styles.action_item}>Referral : View</div>
+                                        <div className={styles.action_item}>Commission : View</div>
+                                        <div className={styles.action_item}>URLs Setting</div>
+                                        <div className={styles.action_item}>Generate Commission</div>
+                                        <div className={styles.action_item}>Accept / Decline</div>
+                                    </div> */}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -193,7 +365,21 @@ function AgentList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label} onClick={handleActionClick}>Action</span>
+                                    {/* <div className={styles.action_popup}>
+                                        <div className={styles.action_item}>Edit Details</div>
+                                        <div className={styles.action_item}>Profile : View</div>
+                                        <div className={styles.action_item}>Operator : View</div>
+                                        <div className={styles.action_item}>Referral : View</div>
+                                        <div className={styles.action_item}>Commission : View</div>
+                                        <div className={styles.action_item}>URLs Setting</div>
+                                        <div className={styles.action_item}>Generate Commission</div>
+                                        <div className={styles.action_item}>Accept / Decline</div>
+                                    </div> */}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -205,7 +391,21 @@ function AgentList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label} onClick={handleActionClick}>Action</span>
+                                    {/* <div className={styles.action_popup}>
+                                        <div className={styles.action_item}>Edit Details</div>
+                                        <div className={styles.action_item}>Profile : View</div>
+                                        <div className={styles.action_item}>Operator : View</div>
+                                        <div className={styles.action_item}>Referral : View</div>
+                                        <div className={styles.action_item}>Commission : View</div>
+                                        <div className={styles.action_item}>URLs Setting</div>
+                                        <div className={styles.action_item}>Generate Commission</div>
+                                        <div className={styles.action_item}>Accept / Decline</div>
+                                    </div> */}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>XXX XXXXXX</td>
@@ -217,11 +417,27 @@ function AgentList() {
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXX <br /> XXXXXXXXX </td>
                             <td> XXXXXXXXXX <br /> XXXXXXXXXXXXXX </td>
-                            <td> 24 Dec 2021 <br /> Action </td>
+                            <td>
+                                <div className={styles.action_section}>
+                                    <span className={styles.date_label}>24 Dec 2021 </span> <br /> <span className={styles.action_label} onClick={handleActionClick}>Action</span>
+                                    {/* <div className={styles.action_popup}>
+                                        <div className={styles.action_item}>Edit Details</div>
+                                        <div className={styles.action_item}>Profile : View</div>
+                                        <div className={styles.action_item}>Operator : View</div>
+                                        <div className={styles.action_item}>Referral : View</div>
+                                        <div className={styles.action_item}>Commission : View</div>
+                                        <div className={styles.action_item}>URLs Setting</div>
+                                        <div className={styles.action_item}>Generate Commission</div>
+                                        <div className={styles.action_item}>Accept / Decline</div>
+                                    </div> */}
+                                </div>
+                            </td>
                         </tr>
-                        
+
                     </tbody>
                 </table>
+
+
             </div>
         </div>
     );
