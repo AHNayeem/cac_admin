@@ -62,7 +62,7 @@
 .data_table td {
     border: 1px dashed #ddd;
     padding: 3px 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .data_table th {
@@ -151,9 +151,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 18px;
+    height: 16px;
     width: 50px;
-    line-height: 18px;
+    line-height: 16px;
     cursor: pointer;
     float: right;
 }

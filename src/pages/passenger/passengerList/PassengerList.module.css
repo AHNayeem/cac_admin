@@ -63,7 +63,7 @@
 .data_table td {
     border: 1px dashed #ddd;
     padding: 3px 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .data_table th {
@@ -211,4 +211,48 @@
 
 .black .name_td_ball {
     background-color: #000;
+}
+
+
+.action_section {
+    position: relative;
+    text-align: right;
+}
+
+.action_label {
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 50px;
+    line-height: 16px;
+    cursor: pointer;
+    float: right;
+}
+
+.action_popup {
+    width: 134px;
+    position: absolute;
+    right: 0;
+    top: 34px;
+    background-color: #DDFFFF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.action_item {
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    line-height: 22px;
+    width: 100%;
+    padding: 0 8px;
+}
+.action_item:hover {
+    background-color: #00ffff;
 }
