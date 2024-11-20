@@ -21,7 +21,8 @@
     background-color: #ddfffe50;
     border: 1px solid #d0d0d0;
     border-radius: 4px;
-    padding: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .app_left_content {
