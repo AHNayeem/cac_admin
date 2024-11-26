@@ -12,7 +12,7 @@ function Dashboard() {
                     <div className={styles.filter_part}>
                         <div className={styles.search_section}>
                             <span className={styles.search_icon}><RiSearch2Line /></span>
-                            <input placeholder='Search destination...'/>
+                            <input placeholder='Search destination...' />
                             <span className={styles.search_icon}><TfiClose /></span>
                         </div>
                     </div>
@@ -20,31 +20,49 @@ function Dashboard() {
                         <div className={styles.filter_item}>
                             <select className={styles.filter_select}>
                                 <option>All Country</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
                             </select>
                         </div>
                         <div className={styles.filter_item}>
                             <select className={styles.filter_select}>
                                 <option>All City</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
                             </select>
                         </div>
                         <div className={styles.filter_item}>
                             <select className={styles.filter_select}>
                                 <option>Service Type</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
                             </select>
                         </div>
                         <div className={styles.filter_item}>
                             <select className={styles.filter_select}>
                                 <option>Operator</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
                             </select>
                         </div>
                         <div className={styles.filter_item}>
                             <select className={styles.filter_select}>
                                 <option>Driver</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
                             </select>
                         </div>
                         <div className={styles.filter_item}>
                             <select className={styles.filter_select}>
                                 <option>Status</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
                             </select>
                         </div>
                     </div>

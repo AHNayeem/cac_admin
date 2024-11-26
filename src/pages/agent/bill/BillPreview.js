@@ -26,11 +26,17 @@ function BillPreview() {
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>Select Agent</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
                         </select>
                     </div>
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>January 2021</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
                         </select>
                     </div>
                     <div className={styles.filter_item}>
@@ -169,7 +175,7 @@ function BillPreview() {
                         <div className={styles.bill_status_body}>
                             <div className={styles.bill_status_item}>
                                 <div className={styles.bill_status_itemcheck}>
-                                    <input type='checkbox' checked/>
+                                    <input type='checkbox' checked />
                                 </div>
                                 <div className={styles.bill_status_itemlabel}>
                                     <span className={styles.bill_status_itemsublabel} style={{ backgroundColor: '#fff', border: '1px solid blue', color: 'blue' }}>DUE</span>
@@ -178,7 +184,7 @@ function BillPreview() {
                             </div>
                             <div className={styles.bill_status_item}>
                                 <div className={styles.bill_status_itemcheck}>
-                                    <input type='checkbox' checked disabled/>
+                                    <input type='checkbox' checked disabled />
                                 </div>
                                 <div className={styles.bill_status_itemlabel}>
                                     <span className={styles.bill_status_itemsublabel} style={{ backgroundColor: '#fff', border: '1px solid green', color: 'green' }}>00/00/0000</span>
@@ -187,7 +193,7 @@ function BillPreview() {
                             </div>
                             <div className={styles.bill_status_item}>
                                 <div className={styles.bill_status_itemcheck}>
-                                    <input type='checkbox' checked disabled/>
+                                    <input type='checkbox' checked disabled />
                                 </div>
                                 <div className={styles.bill_status_itemlabel}>
                                     <span className={styles.bill_status_itemsublabel} style={{ backgroundColor: 'orange', border: '1px solid orange' }}>OVERDUE</span>
@@ -196,7 +202,7 @@ function BillPreview() {
                             </div>
                             <div className={styles.bill_status_item}>
                                 <div className={styles.bill_status_itemcheck}>
-                                    <input type='checkbox' checked disabled/>
+                                    <input type='checkbox' checked disabled />
                                 </div>
                                 <div className={styles.bill_status_itemlabel}>
                                     <span className={styles.bill_status_itemsublabel} style={{ backgroundColor: 'red', border: '1px solid red' }}>UNPAID</span>

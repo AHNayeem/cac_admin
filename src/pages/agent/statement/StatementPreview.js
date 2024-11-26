@@ -26,11 +26,17 @@ function StatementPreviw() {
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>Select Agent</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
                         </select>
                     </div>
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>January 2021</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
                         </select>
                     </div>
                     <div className={styles.filter_item}>

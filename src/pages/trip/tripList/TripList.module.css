@@ -44,12 +44,48 @@
 }
 
 
+
+.src_holder {
+    height: 28px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2px;
+    /* margin-left: 15px; */
+    position: relative;
+}
+
+.src_icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+}
+
+.src_clear {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+}
+
 .filter_input {
     width: 180px;
     height: 24px;
     border: 1px solid #000;
     font-size: 14px;
-    padding: 0 10px;
+    padding: 0 24px;
 }
 
 .filter_input:focus-visible {

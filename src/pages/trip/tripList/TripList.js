@@ -1,8 +1,9 @@
 import { MdStar, MdStarHalf, MdStarOutline } from 'react-icons/md';
 import styles from './TripList.module.css'
-import { IoCarSharp } from 'react-icons/io5';
+import { IoCarSharp, IoChevronDown, IoCloseOutline, IoSearchOutline } from 'react-icons/io5';
 import { FaUser } from 'react-icons/fa';
 import { MdFileDownload } from "react-icons/md";
+import { useState } from 'react';
 
 function TripList() {
     return (
@@ -15,34 +16,57 @@ function TripList() {
                         </select>
                     </div>
                     <div className={styles.filter_item}>
-                        <input type='text' className={styles.filter_input} placeholder='Search by email...' />
+                        <div className={styles.src_holder}>
+                            <span className={styles.src_icon}><IoSearchOutline /></span>
+                            <input type='text' className={styles.filter_input} placeholder='Search by email...' />
+                            <span className={styles.src_clear}><IoCloseOutline /></span>
+                        </div>
                     </div>
                     <div className={styles.filter_item}>
-                        <input type='text' className={styles.filter_input} placeholder='Search by mobile...' />
+                        <div className={styles.src_holder}>
+                            <span className={styles.src_icon}><IoSearchOutline /></span>
+                            <input type='text' className={styles.filter_input} placeholder='Search by mobile...' />
+                            <span className={styles.src_clear}><IoCloseOutline /></span>
+                        </div>
                     </div>
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>All Status</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
                         </select>
                     </div>
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>All Operator</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
                         </select>
                     </div>
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>All Agent</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
                         </select>
                     </div>
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>All Pay Mode</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
                         </select>
                     </div>
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>Pay Status</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
                         </select>
                     </div>
                     <div className={styles.filter_item}>
@@ -62,26 +86,42 @@ function TripList() {
                 </div>
                 <div className={styles.filter_section}>
                     <div className={styles.filter_item}>
-                        <input type='text' className={styles.filter_input} placeholder='Search by name...' />
+                        <div className={styles.src_holder}>
+                            <span className={styles.src_icon}><IoSearchOutline /></span>
+                            <input type='text' className={styles.filter_input} placeholder='Search by name...' />
+                            <span className={styles.src_clear}><IoCloseOutline /></span>
+                        </div>
                     </div>
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>All City</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
                         </select>
                     </div>
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>All Country</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
                         </select>
                     </div>
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>All Car Type</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
                         </select>
                     </div>
                     <div className={styles.filter_item}>
                         <select className={styles.filter_select}>
                             <option>All Vehicle</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
                         </select>
                     </div>
                     <div className={styles.filter_item}>
@@ -112,116 +152,93 @@ function TripList() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>00:00 SUN 15 Mar 2021 [02]</td>
-                            <td>First Name Last Name <br /> [+447777777] </td>
-                            <td>XXXXXX XXX XXXXX  </td>
-                            <td>First Name Last Name <br /> [+447777777] </td>
-                            <td style={{color:'blue'}}>$26.<span className={styles.floating_point}>00</span></td>
-                            <td> Completed </td>
-                        </tr>
-                        <tr>
-                            <td colSpan={6} style={{ padding: '0px' }}>
-
-                                <div className={styles.trip_details_container}>
-                                    <div className={styles.trip_details_left}></div>
-                                    <div className={styles.trip_details_mid}>
-                                        <div className={styles.info_item}> at 00:00</div>
-                                        <div className={styles.info_item}>78 Coombe Rd, New Malden KT3, 4QF, UK</div>
-                                        <div className={styles.info_item}>
-                                            <span className={styles.info_label}>Passenger </span>
-                                            <span className={styles.info_value}>First Name</span>
-                                            <span className={styles.info_label_last}>4.15</span>
-                                        </div>
-                                        <div className={styles.info_item}>
-                                            <span className={styles.info_label}>Rate </span>
-                                            <span className={styles.info_value} style={{ fontSize: '14px' }}> <MdStar /><MdStar /><MdStar /><MdStarHalf /><MdStarOutline /> </span>
-                                            <span className={styles.info_label_last}>By Passenger</span>
-                                        </div>
-                                        <div className={styles.info_item}>
-                                            <span className={styles.info_label} style={{ display: 'flex' }}><span style={{ marginRight: '8px' }}> <IoCarSharp style={{ fontSize: '16px', marginRight: '3px' }} /> Ex</span> <span><FaUser style={{ fontSize: '12px', marginRight: '3px' }} /> 4</span></span>
-                                            <span className={styles.info_value}>Toyota : Black</span>
-                                            <span className={styles.info_label_last}>AB21XYZ</span>
-                                        </div>
-                                        <div className={styles.info_item}>
-                                            <span className={styles.info_label}>Operator</span>
-                                            <span className={styles.info_value}>+44(0)20 8088 3435</span>
-                                            <span className={styles.info_label_last}>Operator's Name</span>
-                                        </div>
-                                    </div>
-                                    <div className={styles.trip_details_right}>
-                                        <div className={styles.driver_payment}><span className={styles.driver_payment_type}>CASH</span> <span className={styles.driver_payment_verify}>Paid</span></div>
-                                        <div className={styles.driver_info_section}>
-                                            <div className={styles.driver_image}></div>
-                                            <div className={styles.driver_info}>
-                                                <div className={styles.driver_info_label}>Driver ID: 00000</div>
-                                                <div className={styles.driver_info_label}>First Name & Last Name</div>
-                                                <div className={styles.driver_info_label}>Rating: 4.68 &nbsp; ID: 0000000</div>
-                                            </div>
-                                        </div>
-                                        <div className={styles.driver_rate_tips}>
-                                            <div className={styles.rate_container}>
-                                                <div className={styles.rate_label}>Rate by Driver</div>
-                                                <div className={styles.rate_value}><MdStar /><MdStar /><MdStar /><MdStarHalf /><MdStarOutline /></div>
-                                            </div>
-                                            <div className={styles.rate_container}>
-                                                <div className={styles.rate_label}>Rate by Passenger</div>
-                                                <div className={styles.rate_value}><MdStar /><MdStar /><MdStar /><MdStarHalf /><MdStarOutline /></div>
-                                            </div>
-                                            <div className={styles.tips_container}>
-                                                <div className={styles.tips_label}>Tips: </div>
-                                                <div className={styles.tips_value}>$ 00.<span className={styles.floating_point}>00</span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>00:00 SUN 15 Mar 2021 [02]</td>
-                            <td>First Name Last Name <br /> [+447777777] </td>
-                            <td>XXXXXX XXX XXXXX  </td>
-                            <td>First Name Last Name <br /> [+447777777] </td>
-                            <td style={{color:'blue'}}>$26.<span className={styles.floating_point}>00</span></td>
-                            <td> Completed </td>
-                        </tr>
-                        <tr>
-                            <td>00:00 SUN 15 Mar 2021 [02]</td>
-                            <td>First Name Last Name <br /> [+447777777] </td>
-                            <td>XXXXXX XXX XXXXX  </td>
-                            <td>First Name Last Name <br /> [+447777777] </td>
-                            <td style={{color:'blue'}}>$26.<span className={styles.floating_point}>00</span></td>
-                            <td> Completed </td>
-                        </tr>
-                        <tr>
-                            <td>00:00 SUN 15 Mar 2021 [02]</td>
-                            <td>First Name Last Name <br /> [+447777777] </td>
-                            <td>XXXXXX XXX XXXXX  </td>
-                            <td>First Name Last Name <br /> [+447777777] </td>
-                            <td style={{color:'blue'}}>$26.<span className={styles.floating_point}>00</span></td>
-                            <td> Completed </td>
-                        </tr>
-                        <tr>
-                            <td>00:00 SUN 15 Mar 2021 [02]</td>
-                            <td>First Name Last Name <br /> [+447777777] </td>
-                            <td>XXXXXX XXX XXXXX  </td>
-                            <td>First Name Last Name <br /> [+447777777] </td>
-                            <td style={{color:'blue'}}>$26.<span className={styles.floating_point}>00</span></td>
-                            <td> Completed </td>
-                        </tr>
-                        <tr>
-                            <td>00:00 SUN 15 Mar 2021 [02]</td>
-                            <td>First Name Last Name <br /> [+447777777] </td>
-                            <td>XXXXXX XXX XXXXX  </td>
-                            <td>First Name Last Name <br /> [+447777777] </td>
-                            <td style={{color:'blue'}}>$26.<span className={styles.floating_point}>00</span></td>
-                            <td> Completed </td>
-                        </tr>
+                        <ListOfItem />
                     </tbody>
                 </table>
             </div>
         </div>
     );
 }
+
+
+const ListOfItem = () => {
+    const [showActionMenu, setShowActionMenu] = useState(false);
+    const handleActionClick = () => {
+        setShowActionMenu(prev => !prev)
+    }
+
+    return (
+        <>
+            <tr>
+                <td>00:00 SUN 15 Mar 2021 [02]</td>
+                <td>First Name Last Name <br /> [+447777777] </td>
+                <td>XXXXXX XXX XXXXX  </td>
+                <td>First Name Last Name <br /> [+447777777] </td>
+                <td style={{ color: 'blue' }}>$26.<span className={styles.floating_point}>00</span></td>
+                <td><div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}><span> Completed</span> <span style={{ fontSize: '20px', display: 'flex', cursor: 'pointer' }} onClick={handleActionClick}><IoChevronDown /></span> </div></td>
+            </tr>
+            {showActionMenu &&
+                <tr>
+                    <td colSpan={6} style={{ padding: '0px' }}>
+
+                        <div className={styles.trip_details_container}>
+                            <div className={styles.trip_details_left}></div>
+                            <div className={styles.trip_details_mid}>
+                                <div className={styles.info_item}> at 00:00</div>
+                                <div className={styles.info_item}>78 Coombe Rd, New Malden KT3, 4QF, UK</div>
+                                <div className={styles.info_item}>
+                                    <span className={styles.info_label}>Passenger </span>
+                                    <span className={styles.info_value}>First Name</span>
+                                    <span className={styles.info_label_last}>4.15</span>
+                                </div>
+                                <div className={styles.info_item}>
+                                    <span className={styles.info_label}>Rate </span>
+                                    <span className={styles.info_value} style={{ fontSize: '14px' }}> <MdStar /><MdStar /><MdStar /><MdStarHalf /><MdStarOutline /> </span>
+                                    <span className={styles.info_label_last}>By Passenger</span>
+                                </div>
+                                <div className={styles.info_item}>
+                                    <span className={styles.info_label} style={{ display: 'flex' }}><span style={{ marginRight: '8px' }}> <IoCarSharp style={{ fontSize: '16px', marginRight: '3px' }} /> Ex</span> <span><FaUser style={{ fontSize: '12px', marginRight: '3px' }} /> 4</span></span>
+                                    <span className={styles.info_value}>Toyota : Black</span>
+                                    <span className={styles.info_label_last}>AB21XYZ</span>
+                                </div>
+                                <div className={styles.info_item}>
+                                    <span className={styles.info_label}>Operator</span>
+                                    <span className={styles.info_value}>+44(0)20 8088 3435</span>
+                                    <span className={styles.info_label_last}>Operator's Name</span>
+                                </div>
+                            </div>
+                            <div className={styles.trip_details_right}>
+                                <div className={styles.driver_payment}><span className={styles.driver_payment_type}>CASH</span> <span className={styles.driver_payment_verify}>Paid</span></div>
+                                <div className={styles.driver_info_section}>
+                                    <div className={styles.driver_image}></div>
+                                    <div className={styles.driver_info}>
+                                        <div className={styles.driver_info_label}>Driver ID: 00000</div>
+                                        <div className={styles.driver_info_label}>First Name & Last Name</div>
+                                        <div className={styles.driver_info_label}>Rating: 4.68 &nbsp; ID: 0000000</div>
+                                    </div>
+                                </div>
+                                <div className={styles.driver_rate_tips}>
+                                    <div className={styles.rate_container}>
+                                        <div className={styles.rate_label}>Rate by Driver</div>
+                                        <div className={styles.rate_value}><MdStar /><MdStar /><MdStar /><MdStarHalf /><MdStarOutline /></div>
+                                    </div>
+                                    <div className={styles.rate_container}>
+                                        <div className={styles.rate_label}>Rate by Passenger</div>
+                                        <div className={styles.rate_value}><MdStar /><MdStar /><MdStar /><MdStarHalf /><MdStarOutline /></div>
+                                    </div>
+                                    <div className={styles.tips_container}>
+                                        <div className={styles.tips_label}>Tips: </div>
+                                        <div className={styles.tips_value}>$ 00.<span className={styles.floating_point}>00</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </>
+    )
+}
+
 
 export default TripList;

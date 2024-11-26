@@ -38,8 +38,8 @@ const SortableItem = ({ id, item }) => {
         <div className={styles.app_item} ref={setNodeRef} style={style} {...attributes} {...listeners}>
             {/* <strong>{item.label}</strong>
             <p>{item.content}</p> */}
-            <div className={styles.app_left_content}>{item.label}</div>
-            <div className={styles.app_mid_content}>{item.content}</div>
+            <div className={styles.app_left_content}><input value={item.label} /></div>
+            <div className={styles.app_mid_content}><input value={item.content} /></div>
             <div className={styles.app_right_content}>
                 <label className={styles.switch} htmlFor={'switch' + id}>
                     <input id={'switch' + id} type="checkbox" defaultChecked />
