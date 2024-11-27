@@ -18,13 +18,6 @@ function TripList() {
                     <div className={styles.filter_item}>
                         <div className={styles.src_holder}>
                             <span className={styles.src_icon}><IoSearchOutline /></span>
-                            <input type='text' className={styles.filter_input} placeholder='Search by email...' />
-                            <span className={styles.src_clear}><IoCloseOutline /></span>
-                        </div>
-                    </div>
-                    <div className={styles.filter_item}>
-                        <div className={styles.src_holder}>
-                            <span className={styles.src_icon}><IoSearchOutline /></span>
                             <input type='text' className={styles.filter_input} placeholder='Search by mobile...' />
                             <span className={styles.src_clear}><IoCloseOutline /></span>
                         </div>
@@ -89,6 +82,13 @@ function TripList() {
                         <div className={styles.src_holder}>
                             <span className={styles.src_icon}><IoSearchOutline /></span>
                             <input type='text' className={styles.filter_input} placeholder='Search by name...' />
+                            <span className={styles.src_clear}><IoCloseOutline /></span>
+                        </div>
+                    </div>
+                    <div className={styles.filter_item}>
+                        <div className={styles.src_holder}>
+                            <span className={styles.src_icon}><IoSearchOutline /></span>
+                            <input type='text' className={styles.filter_input} placeholder='Search by email...' />
                             <span className={styles.src_clear}><IoCloseOutline /></span>
                         </div>
                     </div>
