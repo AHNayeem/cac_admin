@@ -2,13 +2,12 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AuthLayout from './layouts/AuthLayout';
 import AdminLayout from './layouts/AdminLayout';
-import ProtectedRoute from './components/ProtectedRoute';
-import PublicRoute from './components/PublicRoute'; // Import the new PublicRoute
+import ProtectedRoute from './components/ProtectedRoute'; // For authenticated routes
+import PublicRoute from './components/PublicRoute'; // For unauthenticated routes
 import AgentLayout from './pages/agent/AgentLayout';
 import OperatorLayout from './pages/operator/OperatorLayout';
 import PassengerLayout from './pages/passenger/PassengerLayout';
 import DriverLayout from './pages/driver/DriverLayout';
-import PageNotFound from './pages/PageNotFound';
 import VehicleLayout from './pages/vehicle/VehicleLayout';
 import SubAdminLayout from './pages/sub-admin/SubAdminLayout';
 import SettingLayout from './pages/setting/SettingLayout';
@@ -20,6 +19,7 @@ import ServiceTypeLayout from './pages/service-type/ServiceTypeLayout';
 import ReferralLayout from './pages/referral/ReferralLayout';
 import DispatcherLayout from './pages/dispatcher/DispatcherLayout';
 import PaymentLayout from './pages/payment/PaymentLayout';
+import PageNotFound from './pages/PageNotFound';
 
 // Lazy load pages
 const Dashboard = lazy(() => import('./pages/dashboard/Dashboard'));
@@ -30,9 +30,8 @@ function AppRoutes() {
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          {/* Protected routes for authenticated users */}
-          {/* <Route element={<ProtectedRoute />}> */}
-          <Route element={<AdminLayout />}>
+          {/* Protected Routes for Authenticated Users */}
+          <Route element={<ProtectedRoute layout={<AdminLayout />} />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/agent" element={<AgentLayout />} />
             <Route path="/operator" element={<OperatorLayout />} />
@@ -50,14 +49,11 @@ function AppRoutes() {
             <Route path="/payment" element={<PaymentLayout />} />
             <Route path="/referral" element={<ReferralLayout />} />
           </Route>
-          {/* </Route> */}
 
-          {/* Public routes for non-authenticated users */}
-          {/* <Route element={<PublicRoute />}> */}
-          <Route element={<AuthLayout />}>
+          {/* Public Routes for Unauthenticated Users */}
+          <Route element={<PublicRoute layout={<AuthLayout />} />}>
             <Route path="/login" element={<Login />} />
           </Route>
-          {/* </Route> */}
 
           {/* Catch-all route for 404 */}
           <Route path="*" element={<PageNotFound />} />

@@ -1,40 +1,67 @@
 import { useState } from 'react';
 import styles from './Login.module.css'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { FiEyeOff } from 'react-icons/fi';
 import { BsEyeFill } from 'react-icons/bs';
 import { FaUser } from 'react-icons/fa';
+import { loginUser } from '../../services/api';
+import { Toaster, toast } from 'react-hot-toast';
+
+import { useAuth } from '../../context/AuthContext'; // Import useAuth hook
 
 function Login() {
-    const navigate = useNavigate()
+    const { login } = useAuth(); // Access login function from AuthContext
+    const navigate = useNavigate();
     const [pass_type, set_pass_type] = useState('password')
     const [loader, setLoader] = useState(false)
     const [form_status, setform_status] = useState(false)
+    const [error, setError] = useState(null);
+
+    // const [formData, setFormData] = useState({
+    //     email: '',
+    //     password: '',
+    //     remember_me: true,
+    //     device_type: 'web',
+    //     login_by: 'manual',
+    //     application_name: 'passenger browser app',
+    //     app_version: '2.0.2',
+    //     device_token: 'test_app_token',
+    //     app_name: 'passenger next app',
+    //     social_unique_id: ''
+    // });
+
     const [formData, setFormData] = useState({
         email: '',
-        password: '',
-        remember_me: true,
-        device_type: 'web',
-        login_by: 'manual',
-        application_name: 'passenger browser app',
-        app_version: '2.0.2',
-        device_token: 'test_app_token',
-        app_name: 'passenger next app',
-        social_unique_id: ''
-    });
+        password: ''
+    })
 
-    const handleChange = () => {
-
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }))
     }
 
-    const handleLogin = () => {
-
+    const handleLogin = async (e) => {
+        e.preventDefault();
+        try {
+            setLoader(true)
+            const apires = await loginUser(formData);
+            console.log("🚀 ~ handleLogin ~ apires:", apires)
+            const { user, token } = apires;
+            console.log("🚀 ~ handleLogin ~ token:", token)
+            console.log("🚀 ~ handleLogin ~ user:", user)
+            login(user, token); // Update AuthContext state
+            setLoader(false)
+            navigate('/'); // Redirect to the dashboard
+        } catch (err) {
+            setLoader(false)
+            setError(err.message || 'Login failed');
+        }
     }
 
     return (
-        <div className={styles.container} style={{ backgroundImage: "url(assets/images/London_Map.png)"}}>
+        <div className={styles.container} style={{ backgroundImage: "url(assets/images/London_Map.png)" }}>
             <div className={styles.mainContainer}>
-                {/* <Toaster position="top-right" /> */}
+                <Toaster />
                 <div className={styles.innerContainer}>
                     <div className={styles.title_section}>
                         <FaUser />
@@ -59,7 +86,6 @@ function Login() {
                         </div>
                     </div>
 
-
                     <div className={styles.bottomSection}>
                         <div className={styles.iconSection}>
                         </div>
@@ -69,7 +95,8 @@ function Login() {
                     </div>
 
                     <div className={styles.login}>
-                        <button onClick={handleLogin} style={form_status ? {} : { pointerEvents: 'none', backgroundColor: '#708090', color: '#fff' }} >{loader ? 'LOADING...' : 'LOGIN'}</button>
+                        {/* style={form_status ? {} : { pointerEvents: 'none', backgroundColor: '#708090', color: '#fff' }} */}
+                        <button onClick={handleLogin} >{loader ? 'LOADING...' : 'LOGIN'}</button>
                     </div>
                 </div>
             </div>

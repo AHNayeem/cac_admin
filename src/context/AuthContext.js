@@ -1,46 +1,47 @@
-import React, { createContext, useState, useEffect } from 'react';
-// import { getToken, logout, register as registerService } from '../services/authService';
-import { jwtDecode } from 'jwt-decode';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
+// Create the AuthContext
+const AuthContext = createContext();
 
-export const AuthContext = createContext();
+// Custom hook to use AuthContext
+export const useAuth = () => useContext(AuthContext);
 
+// AuthProvider component
 export const AuthProvider = ({ children }) => {
-    const [auth, setAuth] = useState({ token: null, user: null });
-    const [loading, setLoading] = useState(true);
+    // Initialize state from localStorage or defaults
+    const [auth, setAuth] = useState(() => {
+        const token = localStorage.getItem('authToken');
+        const user = JSON.parse(localStorage.getItem('user'));
+        return token ? { isAuthenticated: true, user, token } : { isAuthenticated: false, user: null, token: null };
+    });
 
-    // Check token on app start
+    // Sync localStorage changes on auth state change
     useEffect(() => {
-        // const token = getToken();
-        // console.log("🚀 ~ useEffect ~ token:", token)
-        // if (token) {
-        //     const user = jwtDecode(token);
-        //     console.log("🚀 ~ useEffect ~ user:", user)
-        //     setAuth({ token, user });
-        // }
-        setLoading(false);
-    }, []);
+        if (auth.isAuthenticated) {
+            localStorage.setItem('authToken', auth.token);
+            localStorage.setItem('user', JSON.stringify(auth.user));
+        } else {
+            localStorage.removeItem('authToken');
+            localStorage.removeItem('user');
+        }
+    }, [auth]);
 
-    const loginUser = (token) => {
-        // const user = jwtDecode(token);
-        // console.log("🚀 ~ loginUser ~ user:", user)
-        // setAuth({ token, user });
+    // Login function
+    const login = (user, token) => {
+        setAuth({ isAuthenticated: true, user, token });
     };
 
-    const register = async (userData) => {
-        // console.log("🚀 ~ register ~ userData:", userData)
-        // const data = await registerService(userData);
-        // console.log("🚀 ~ register ~ data:", data)
-        // setAuth({ token: data.token, user: jwtDecode(data.token) });
-    };
+    // Logout function
+    const logout = () => {
+        setAuth({ isAuthenticated: false, user: null, token: null });
+        localStorage.removeItem('authToken');
+        localStorage.removeItem('user');
+        // navigate('/login'); // Redirect to login page
 
-    const logoutUser = () => {
-        // logout();
-        setAuth({ token: null, user: null });
     };
 
     return (
-        <AuthContext.Provider value={{ auth, loginUser, logoutUser, loading, register }}>
+        <AuthContext.Provider value={{ auth, login, logout }}>
             {children}
         </AuthContext.Provider>
     );

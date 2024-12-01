@@ -2,10 +2,11 @@ import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import styles from './Header.module.css'
 import { Fragment, useCallback } from 'react';
 import { links } from './Sidebar';
+import { useAuth } from '../context/AuthContext';
 
 function Header() {
+    const { logout } = useAuth();
     const location = useLocation()
-    console.log("🚀 ~ Header ~ location:", location)
     const [searchParams] = useSearchParams(); // Destructure the array to get `searchParams`
     const page = searchParams.get('page');
 
@@ -33,7 +34,7 @@ function Header() {
                 )}
             </div>
             <div className={styles.head_right}>
-                <div className={styles.logout_btn}>Logout</div>
+                <div className={styles.logout_btn} onClick={() => logout()}>Logout</div>
             </div>
         </header>
     );
