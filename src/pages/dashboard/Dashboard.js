@@ -7,7 +7,7 @@ import { RiSearch2Line } from 'react-icons/ri';
 function Dashboard() {
     return (
         <div className={styles.main_container}>
-            <div className={styles.content_top_section}>
+            <div className={styles.content_top_section} style={{ backgroundImage: "url(assets/images/London_Map.png)", height: '100%', width: '100%' }}>
                 <div className={styles.filter_section}>
                     <div className={styles.filter_part}>
                         <div className={styles.search_section}>
